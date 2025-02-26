@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  min-height: 300vh; /* Extended height */
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  display:flex;
+}
+
+.slider {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  width:100%;
+}
+.slider h1{
+  margin: auto;
+  background-color:transparent;
+  border: 15px solid white;
+  font-size:50px;
+  padding:8px;
+}
+
+.slider img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  background-color: red;
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #111;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Products Section */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.product {
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.product p {
+  color: #ccc;
+}
+
+.product button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #ccc;
+}
+
+/* About Section */
+.about {
+  background-color: #111;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 8px;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  color: #ccc;
+  line-height: 1.8;
+}
+
+/* Instagram Section */
+.instagram {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.instagram h2 {
+  margin-bottom: 1rem;
+}
+
+.instagram a {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.instagram a:hover {
+  background-color: #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+.Btn {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+width: 45px;
+height: 45px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+position: fixed;
+bottom: 0;
+margin-left: 5px;
+margin-bottom: 15px;
+overflow: hidden;
+transition-duration: 0.3s;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+background-color: #00e85d;
+}
+
+.sign {
+width: 100%;
+transition-duration: 0.3s;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.sign svg {
+width: 25px;
+}
+
+.sign svg path {
+fill: white;
+}
+.text {
+position: absolute;
+right: 0%;
+width: 0%;
+opacity: 0;
+color: white;
+font-size: 1.2em;
+font-weight: 600;
+transition-duration: 0.3s;
+}
+
+.Btn:hover {
+width: 150px;
+border-radius: 40px;
+transition-duration: 0.3s;
+}
+
+.Btn:hover .sign {
+width: 30%;
+transition-duration: 0.3s;
+padding-left: 10px;
+}
+
+.Btn:hover .text {
+opacity: 1;
+width: 70%;
+transition-duration: 0.3s;
+padding-right: 10px;
+}
+.Btn:active {
+transform: translate(2px, 2px);
+}
